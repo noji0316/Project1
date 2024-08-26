@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Main</title>
+    <style>
+      h1 {
+        text-align: center;
+        color: rgb(137, 120, 120);
+      }
+
+      #txt_welcome {
+        text-align: center;
+        margin-bottom: 50px;
+        color: rgb(91, 69, 69);
+        font-weight: 700;
+      }
+
+      .card {
+        text-align: center;
+      }
+
+      .card_title {
+        font-size: 20px;
+      }
+
+      .card_button {
+        font-size: 25px;
+        width: 150px;
+        height: 30px;
+      }
+
+      .card_img {
+        width: 300px;
+        height: 300px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>미니 온라인 서점입니다.</h1>
+    <div id="txt_welcome">
+      원하시는 책을 골라보세요! <br />
+      당신의 독서를 응원합니다
+      <br />
+      <br />
+      <a href="./Firstpage.html"> 처음으로 돌아가기 </a>
+    </div>
+    <div style="display: grid; grid-template-columns: 1fr 1fr 1fr">
+      <div class="card">
+        <img class="card_img" src="./img/book1.jpg" />
+        <p class="card_title">애세이</p>
+        <input
+          class="card_button"
+          type="button"
+          value="Click"
+          onclick="alert('준비중');"
+        />
+      </div>
+      <div class="card">
+        <img class="card_img" src="./img/book2.jpeg" />
+        <p class="card_title">고전 소설</p>
+        <input
+          class="card_button"
+          type="button"
+          value="Click"
+          onclick="alert('준비중');"
+        />
+      </div>
+      <div class="card">
+        <img class="card_img" src="./img/book3.jpg" />
+        <p class="card_title">판타지 소설</p>
+        <input
+          class="card_button"
+          type="button"
+          value="Click"
+          onclick="alert('준비중');"
+        />
+      </div>
+    </div>
+  </body>
+</html>
